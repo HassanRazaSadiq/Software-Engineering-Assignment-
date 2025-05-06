@@ -1,0 +1,109 @@
+/* RegisterPage.css */
+.register-wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* White background */
+  position: relative;
+}
+
+.register-box {
+  background-color: #17252A; /* Dark greenish blue for form container */
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  z-index: 1;
+}
+
+.register-title {
+  font-size: 2.5rem;
+  color: #00bcd4; /* Light blue color for the heading */
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.register-form .form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row; /* Change to row layout */
+  align-items: center; /* Align vertically */
+  justify-content: space-between; /
+}
+
+.register-form label {
+  color: #00bcd4; /* Light blue for labels */
+  font-weight: 600;
+  width: 35%; /* Control label width */
+  text-align: left;
+}
+
+.register-form input {
+  padding: 1rem;
+  border: 1px solid #00bcd4; /* Light blue border for input fields */
+  border-radius: 30px;
+  font-size: 1rem;
+  width: 60%; /* Take the rest of the space */
+  margin-top: 0.5rem;
+  background-color: #e1f5fe; /* Light blue background for input fields */
+  color: #00bcd4;
+}
+
+.register-form input:focus {
+  outline: none;
+  background-color: #b3e5fc; /* Slightly darker light blue on focus */
+  border: 1px solid #0288d1; /* Darker blue border on focus */
+}
+
+.register-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #00bcd4; /* Light blue button */
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.register-btn:hover {
+  background-color: #0288d1; //* Darker blue on hover */
+}
+
+.register-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #dc2626; /* Red color for error */
+}
+
+/* Background Circles */
+.register-wrapper::before,
+.register-wrapper::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.register-wrapper::before {
+  width: 350px;
+  height: 350px;
+  left: -50px;
+  top: -100px;
+}
+
+.register-wrapper::after {
+  width: 250px;
+  height: 250px;
+  right: -50px;
+  bottom: -100px;
+}

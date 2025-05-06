@@ -1,0 +1,300 @@
+/* AuthPage.css */
+.login-page-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* White background */
+  position: relative;
+}
+
+.login-right {
+  background-color: #17252A; /* Dark greenish blue for form container */
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #00bcd4; /* Light blue color for the heading */
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.auth-subtitle {
+  font-size: 1rem;
+  color: #b2bec3; /* Subtle text color */
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column; /* Changed to column for better vertical alignment */
+  align-items: flex-start; /* Align left for labels */
+}
+
+label {
+  color: #00bcd4; /* Light blue for labels */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  padding: 1rem;
+  border: 1px solid #00bcd4; /* Light blue border for input fields */
+  border-radius: 30px;
+  font-size: 1rem;
+  width: 100%; /* Full width of container */
+  margin-top: 0.5rem;
+  background-color: #e1f5fe; /* Light blue background for input fields */
+  color: #00bcd4;
+}
+
+.form-input:focus {
+  outline: none;
+  background-color: #b3e5fc; /* Slightly darker light blue on focus */
+  border: 1px solid #0288d1; /* Darker blue border on focus */
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #b2bec3;
+  margin-top: 1rem;
+}
+
+.remember-forgot label {
+  margin-right: 1rem;
+}
+
+.forgot-link {
+  color: #00bcd4; /* Light blue for forgot link */
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #00bcd4; /* Light blue button */
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.auth-btn:hover {
+  background-color: #0288d1; /* Darker blue on hover */
+}
+
+.new-user {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 1.5rem;
+}
+
+.new-user a {
+  color: #00bcd4; /* Light blue for new user link */
+  text-decoration: none;
+}
+
+.new-user a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #dc2626; /* Red color for error */
+}
+
+/* Background Circles */
+.login-page-container::before,
+.login-page-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.login-page-container::before {
+  width: 350px;
+  height: 350px;
+  left: -50px;
+  top: -100px;
+}
+
+.login-page-container::after {
+  width: 250px;
+  height: 250px;
+  right: -50px;
+  bottom: -100px;
+}
+/* AuthPage.css */
+.login-page-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* White background */
+  position: relative;
+}
+
+.login-right {
+  background-color: #17252A; /* Dark greenish blue for form container */
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #00bcd4; /* Light blue color for the heading */
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.auth-subtitle {
+  font-size: 1rem;
+  color: #b2bec3; /* Subtle text color */
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column; /* Changed to column for better vertical alignment */
+  align-items: flex-start; /* Align left for labels */
+}
+
+label {
+  color: #00bcd4; /* Light blue for labels */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  padding: 1rem;
+  border: 1px solid #00bcd4; /* Light blue border for input fields */
+  border-radius: 30px;
+  font-size: 1rem;
+  width: 100%; /* Full width of container */
+  margin-top: 0.5rem;
+  background-color: #e1f5fe; /* Light blue background for input fields */
+  color: #00bcd4;
+}
+
+.form-input:focus {
+  outline: none;
+  background-color: #b3e5fc; /* Slightly darker light blue on focus */
+  border: 1px solid #0288d1; /* Darker blue border on focus */
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #b2bec3;
+  margin-top: 1rem;
+}
+
+.remember-forgot label {
+  margin-right: 1rem;
+}
+
+.forgot-link {
+  color: #00bcd4; /* Light blue for forgot link */
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #00bcd4; /* Light blue button */
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.auth-btn:hover {
+  background-color: #0288d1; /* Darker blue on hover */
+}
+
+.new-user {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 1.5rem;
+}
+
+.new-user a {
+  color: #00bcd4; /* Light blue for new user link */
+  text-decoration: none;
+}
+
+.new-user a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #dc2626; /* Red color for error */
+}
+
+/* Background Circles */
+.login-page-container::before,
+.login-page-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.login-page-container::before {
+  width: 350px;
+  height: 350px;
+  left: -50px;
+  top: -100px;
+}
+
+.login-page-container::after {
+  width: 250px;
+  height: 250px;
+  right: -50px;
+  bottom: -100px;
+}

@@ -1,0 +1,51 @@
+/* SavedSearches.css */
+.saved-searches-container {
+  padding: 20px;
+  background-color: #17252A;
+  border-radius: 8px;
+  width: 100%;
+  color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: #17252A;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.delete-btn {
+  background-color: #17252A;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+.error {
+  color: red;
+}
+
+.no-results {
+  color: #777;
+}
